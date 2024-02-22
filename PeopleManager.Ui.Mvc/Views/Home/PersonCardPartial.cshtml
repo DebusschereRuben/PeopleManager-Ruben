@@ -1,0 +1,13 @@
+﻿@model Person
+
+<div class="card">
+    <h5 class="card-header">@Model.FirstName @Model.LastName</h5>
+    <div class="card-body">
+        @if (!string.IsNullOrWhiteSpace(Model.Email))
+        {
+            <a href="mailto:@Model.Email">@Model.Email</a>
+        }else{
+            <p>mail not found</p>
+        }
+    </div>
+</div>

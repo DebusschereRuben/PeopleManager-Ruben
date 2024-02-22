@@ -15,7 +15,9 @@ namespace PeopleManager.Ui.Mvc.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var peopleController = new PeopleController();
+            var people = peopleController.GetPeople();
+            return View(people);
         }
 
         public IActionResult Privacy()

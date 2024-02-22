@@ -1,30 +1,51 @@
-﻿@{
-    ViewData["Title"] = "People List";
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
 }
 
-<table class="table table-dark table-striped">
+<style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+
+<h1>people</h1>
+<table>
     <thead>
         <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
+            <th>First name</th>
+            <th>Last name</th>
             <th>Email</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>johndoe@example.com</td>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
         </tr>
         <tr>
-            <td>Jane</td>
-            <td>Smith</td>
-            <td>janesmith@example.com</td>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
         </tr>
         <tr>
-            <td>Emily</td>
-            <td>Johnson</td>
-            <td>emilyjohnson@example.com</td>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td>Row 3, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 4, Cell 1</td>
+            <td>Row 4, Cell 2</td>
+            <td>Row 4, Cell 3</td>
         </tr>
     </tbody>
 </table>

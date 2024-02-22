@@ -1,0 +1,15 @@
+﻿@model Person
+@*model is nu 1 persoon ipv lijst personen
+    manier nodig om door te geven wat er in model zit
+*@
+
+<tr>
+    <td>@Model.FirstName</td>
+    <td>@Model.LastName</td>
+    <td>
+        @if (!string.IsNullOrWhiteSpace(Model.Email))
+        {
+            <a href="mailto:@Model.Email">@Model.Email</a>
+        }
+    </td>
+</tr>
